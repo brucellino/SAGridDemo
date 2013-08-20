@@ -14,4 +14,4 @@ cd HepMC-${HEPMC_VERSION}
 # need to make a directory for cmake to be compiled in 
 mkdir build
 cd build
-cmake -Dmomentum:GEV -Dlength:MM 
+cmake ../ Unix Makefiles -Dmomentum:GEV -Dlength:MM 

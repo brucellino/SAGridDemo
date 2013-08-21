@@ -13,3 +13,11 @@ cd pythia${PYTHIA_VERSION}
 ./configure --prefix=/tmp --enable-shared --with-hepmc=/tmp --with-hepmcversion=2.06.09
 time make -j4 install
 
+# check the pythia examples are working
+cd examples
+./runmains
+
+# put the output into a tarball - we're going to want to check that
+tar cvfz out.tar.gz out*
+
+

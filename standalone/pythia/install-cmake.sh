@@ -15,6 +15,6 @@ CMAKE_URL=http://www.cmake.org/files/v2.8/cmake-${CMAKE_VERSION}.tar.gz
 wget ${CMAKE_URL}
 tar xvfz ${CMAKE_TARBALL}
 cd cmake-${CMAKE_VERSION}
-./bootstrap
+./bootstrap --parallel=2 --prefix=/tmp/pythiademo-install
 make
 

@@ -14,10 +14,10 @@ cd pythia${PYTHIA_VERSION}
 time make -j4 install
 
 # check the pythia examples are working
-cd examples
-./runmains
+#cd examples
+#./runmains
 
 # put the output into a tarball - we're going to want to check that
-tar cvfz out.tar.gz out*
+
 
 
